@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+html{
+    background-color:hsl(214, 47%, 23%);
+}
+.flex{
+    display: flex;
+}
+header{
+    justify-content: space-between;
+    width: 50%;
+    margin: 10px auto;
+    border: 1px hsl(217, 16%, 45%) solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+.title{
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: white;
+
+}
+.title h1{
+    margin: 0;
+    padding: 0;
+}
+.scorebox{
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #eee;
+    box-sizing: border-box;
+    width: 230px;
+    height: 170px;
+    font-weight: 700;
+    color: hsl(229, 64%, 46%);
+
+}
+.score{
+    font-size: 65px;
+    color:hsl(229, 25%, 31%);
+    
+}
+main{
+    flex-direction: column;
+}
+.paperScissors{
+justify-content: center;
+}
+
+main .rock{
+    margin: 0 auto;    
+}
+img{
+    padding: 60px;
+    border: 30px solid black;
+    border-radius: 50%;
+    background-color: #eee;
+    width: 290px;
+    height: 290px;
+    box-sizing: border-box;
+    box-shadow: inset 0 10px #ccc;
+    cursor: pointer;
+    
+    
+}
+#paper{
+    border: 30px solid hsl(230, 89%, 65%);
+    filter: drop-shadow(0px 10px hsl(230, 89%, 62%));
+    margin-right: 30px;
+}
+#scissors{
+    border: 30px solid hsl(40, 84%, 53%);
+    filter: drop-shadow(0px 10pxhsl(39, 89%, 49%));
+}
+.rock img{
+    border: 30px solid hsl(349, 70%, 56%);
+    filter: drop-shadow(0px 10px hsl(349, 71%, 52%));
+}
+.rules-container{
+    justify-content: flex-end;
+}
+footer h3{
+    color: white;
+    border:hsl(217, 16%, 45%) 2px solid;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
