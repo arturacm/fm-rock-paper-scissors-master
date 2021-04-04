@@ -80,4 +80,14 @@ function scissors(){
     }
     return 0;
 }
+function hideRules() {
+    console.log("Chguei aqui");
+    document.getElementById('rules').style.display = "none";
+    return 0;
+}
+function showRules(){
+    console.log("tbm cheguei");
+    document.getElementById('rules').style.display = "block";
+}
+document.addEventListener("DOMContentLoaded",hideRules);
 
