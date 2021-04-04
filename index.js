@@ -1,9 +1,13 @@
 console.log("hello, world");
 //string commands[3] = ['rock', 'paper', 'scissors'];
 //imp = prompt("Type Rock, Paper or Scissors");
-rpc = [{'Position':'rock', 'wins':'scissors', 'loses': 'paper'},{'Position':'paper', 'wins':'rock', 'loses': 'scissors'},{'Position':'scissors', 'wins':'paper', 'loses': 'rock'}];
-
+rpc = [{'Position':'rock', 'wins':'scissors', 'loses': 'paper'},{'Position':'paper', 'wins':'rock', 'loses': 'scissors'},{'Position':'scissors', 'wins':'paper', 'loses': 'rock'}]
 //1 -  Rock/ 2 - Paper / 3 - Scissors
+function scoreUpdate(){
+    var score = document.getElementById('score').innerHTML
+    score ++;
+    document.getElementById('score').innerHTML = score;
+}
 function randRPS (){
     var randRes = 3 * Math.random();
     var rps;
@@ -33,6 +37,7 @@ function rock(){
     }
     else if (enemy == 'scissors'){
         alert('you won');
+        scoreUpdate();
     }
     else{
         console.log('something wrong is not right');
@@ -50,6 +55,7 @@ function paper(){
     }
     else if (enemy == 'rock'){
         alert('you won');
+        scoreUpdate();
     }
     else{
         console.log('something wrong is not right');
@@ -67,6 +73,7 @@ function scissors(){
     }
     else if (enemy == 'paper'){
         alert('you won');
+        scoreUpdate();
     }
     else{
         console.log('something wrong is not right');

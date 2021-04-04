@@ -41,11 +41,12 @@ color: white;
     color: hsl(229, 64%, 46%);
 
 }
-.score{
+#score{
     font-size: 65px;
     color:hsl(229, 25%, 31%);
-    
+
 }
+
 main{
     flex-direction: column;
 }
